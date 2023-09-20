@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="checkout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    </head>
+    <body onload="checkout()">
+        <!-- for header part -->
+        <div class="header"> 
+            <div class="topheader">
+                <p>Hotline: (+100) 123 456 7890</p>
+                <p>Welcome to our market!</p>
+                <div class="options">
+                    <p>USD</p>
+                    <p>ENG</p>
+                    <p>COMPARE</p>
+                    <p>WISHLIST</p>
+                    <p>ACCOUNT</p>
+                </div>
+            </div>
+            <div class="bottomheader">
+                <h1>EMPORIUM</h1>
+                <div class="searchbox">
+                    <button class="categoriesbtn">All categories</button>
+                    <input class="searchbar" type="text" placeholder="Type to search">
+                </div>
+                <a href="../cart/cart.html"><button class="cartbtn"><i class="fa fa-shopping-cart"></i>Shopping cart</button></a>
+            </div>
+        </div>
+        <!-- for navigation panel -->
+        <div class="navbar">
+            <a href="../homepage/index.html"><button class="navbtn">HOME</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">FASHION</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">JEWELLERY</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">ELECTRONICS</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">SPORTS</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">PAGES</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">CONTACT</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">ADMIN PANEL</button></a>        
+        </div>
+        <div class="container">
+            <div class="nav-panel">
+                <i class="fa fa-home"></i>
+                <a>Home</a>
+                <a>products</a>
+                <a>All products</a>
+            </div>
+            <div class="form-container">
+                <div class="checkout-options">
+                    <a href="#checkout-form"><button>BILLINGADDRESS</button></a>
+                    <a href="#delivery"><button>DELIVERY METHOD</button></a>
+                    <a href="#payment"><button>PAYMENT METHOD</button></a>
+                    <a href="#review"><button>REVIEW ORDER</button></a>
+                    <a href="#confirmation"><button>CONFIRMATION</button></a>
+                </div>
+                <!-- for each checkout section -->
+                <div id="sections" class="sections">
+                   
+                    <div class="checkout-form" id="checkout-form">
+                        <form onsubmit="userDetails(event)" >
+                            <input name="firstname" class="row1" type="text" placeholder="First name*" required>  
+                            <input name="lastname" class="row1" type="text" placeholder="Last name*" required>
+                            <input name="middlename" class="row1" type="text" placeholder="Middlename/Initital" required>
+                            <input name="company" class="row2" type="text" placeholder="Company" required>
+                            <input name="email" class="row2" type="text" placeholder="Email*" required>
+                            <input name="phone" class="row2" type="text" placeholder="Phone*" required>
+                            <input name="country" class="row3" type="text" placeholder="Country" required>
+                            <input name="city" class="row3" type="text" placeholder="City" required>
+                            <input name="state" class="row3" type="text" placeholder="State?Province" required>
+                            <input name="zip" class="row3" type="text" placeholder="Zip/Postcode" required >
+                            <input name="address" class="row4" type="text" placeholder="Address" required>
+                            <div class="nxt-prev">
+                               <a><button type="submit" class="new" ><i class="fa fa-arrow-right"></i></button></a>
+                            </div> 
+                        </form>  
+                    </div>
+                    <div class="deliver-mthd" id="delivery">
+                        <form onsubmit="gotopayment(event)">
+                            <div>
+                                <input type="radio" value="free" name="deliveryOption" required>
+                                <label for="free">Free Delivery</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="standard" name="deliveryOption" required>
+                                <label for="standard">Standard Delivery</label><br>
+                            </div>
+                            <div>
+                            <input type="radio" value="express" name="deliveryOption" required>
+                            <label for="express">Express Delivery</label>
+                            </div> 
+                        
+                        <div class="nxt-prev">
+                            <a href="#checkout-form"><button class="new" onclick="goBacktoBilling()"><i class="fa fa-arrow-left"></i></button></a>
+                            <a><button type="submit" class="new"><i class="fa fa-arrow-right"></i></button></a>
+                        </div> 
+                    </form>               
+                    </div>
+                    <div class="payment-mthd" id="payment">
+                        <div class="row1">
+                            <p>Credit Card</p>
+                        </div>
+                        <form onsubmit="gotoReview(event)">
+                        <input name="carholder" class="row2" type="text" placeholder="Card holder name" required>
+                        <input name="cardnumber" class="row2" type="text" placeholder="Card number" required>
+                        <input name="month" class="row3" type="text" placeholder="Expired Month" required>
+                        <input name="year" class="row3" type="text" placeholder="Expired Year" required>
+                        <input name="cvv" class="row3" type="text" placeholder="CVV" required> 
+
+                        <div class="nxt-prev">
+                            <a href="#delivery"><button class="new" onclick="goBacktoDelivery()"><i class="fa fa-arrow-left"></i></button></a>
+                            <a href="#review"><button type="submit" class="new"><i class="fa fa-arrow-right"></i></button></a>
+                        </div>   
+                        </form>
+                    </div>
+                    <div class="review-order" id="review" onload="sayHello()">
+                        <div class="table">
+                            <div class="heading heading-txt">
+                                <h4>Shopping cart</h4>
+                            </div>   
+                            <div id="cartcontents" class="tableheadings">
+                                <h4 class="item1">Product</h4>
+                                <h4 class="item1">Product</h4>
+                                <h4 class="item1"> Product</h4>
+                                <h4 class="item1">Product</h4>
+                                <h4 class="item1">Product</h4>
+                            </div>
+                            <!-- <div  class="tablecontents">
+                                <img class="item1" src="./images/pc.png">
+                                <p class="item1">PC All-in-One</p>
+                                <p class="item1">$1299.00</p>
+                                <p class="item1">1</p>
+                                <p class="item1">$1299.00</p>
+                            </div> -->
+                            
+                        </div>
+                        <div class="billing-info">
+                            <div class="heading heading-txt">
+                                <h4>Billing Information</h4>
+                            </div>
+                            <div class="tablecontents">
+                                <div class="heading-txt bill-headings">
+                                    <p class="bill-items">Name</p>
+                                    <p class="bill-items">Email</p>
+                                    <p class="bill-items">Phone</p>
+                                    <p class="bill-items">Country</p>
+                                </div>
+                                <div class="bill-headings">
+                                    <p id="name" class="bill-items"></p>
+                                    <p id="email" class="bill-items"></p>
+                                    <p id="phone" class="bill-items"></p>
+                                    <p id="country" class="bill-items"></p>
+                                </div>
+                                <div class="heading-txt bill-headings">
+                                    <p class="bill-items">City</p>
+                                    <p class="bill-items">State</p>
+                                    <p class="bill-items">Zip/Postalcode</p>
+                                    <p class="bill-items">Adddress</p>
+                                </div>
+                                <div class="bill-headings">
+                                    <p id="city" class="bill-items"></p>
+                                    <p id="state" class="bill-items"></p>
+                                    <p id="zip" class="bill-items"></p>
+                                    <p id="address" class="bill-items"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-info">
+                            <div class="heading heading-txt">
+                                <h4>Delivary Information</h4>
+                            </div>
+                            <div>
+                                <p><span id="delivery-route"></span>&nbsp;delivery<span class="heading-txt">$0.00 / Delivery in 7 to 14 business Days</span></p>
+                            </div>
+                        </div>
+                        <div class="payment-info">
+                            <div class="heading heading-txt">
+                                <h4>Payment Information</h4>
+                            </div>
+                            <div>
+                                <p >Cardnumber:&nbsp;<span class="heading-txt" id="cardnumber"></span></p>
+                            </div>
+                        </div>  
+                        <h2 class="totalPrice">Total Price:$<span id="total-Price"></span></h2>
+                        <div class="nxt-prev">
+                            <a href="#payment"><button class="new"><i class="fa fa-arrow-left"></i></button></a>  
+                            <a href="#confirmation"><button class="new"><i class="fa fa-arrow-right"></i></button></a>
+                        </div>         
+                    </div>
+                    <div class="confirmation" id="confirmation">
+                        <button class="tick"><i class="fa fa-check"></i></button>
+                        <h2>Congratulations!Your Order has been processed</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dolor ante, 
+                            ut luctus mi faucibus a. Ut eu tincidunt neque. Proin porttitor id ligula id placerat. 
+                            Integer nec nulla varius, dapibus libero quis, semper eros. Aliquam erat volutpat.
+                             Proin volutpat tellus vel purus interdum euismod.</p>
+                        <a href="./index.html"><button class="return-btn">Return to Shop</button></a>
+                    </div>
+                </div>
+                
+        </div>
+       <script src="../../scripts/user.js"></script>
+    </body>
+</html>
