@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    </head>
+    <body>
+        <!-- for the header part -->
+        <div class="header"> 
+            <div class="topheader">
+                <p>Hotline: (+100) 123 456 7890</p>
+                <p>Welcome to our market!</p>
+                <div class="options">
+                    <p>USD</p>
+                    <p>ENG</p>
+                    <p>COMPARE</p>
+                    <p>WISHLIST</p>
+                    <p>ACCOUNT</p>
+                </div>
+            </div>
+            <div class="bottomheader">
+                <h1>EMPORIUM</h1>
+                <div class="searchbox">
+                    <button class="categoriesbtn">All categories</button>
+                    <input class="searchbar" type="text" placeholder="Type to search">
+                </div>
+                <a href="../cart/cart.html"><button class="cartbtn"><i class="fa fa-shopping-cart"></i>Shopping cart</button></a>
+                
+            </div>
+        </div>
+        <!-- for the navigation panel -->
+        <div class="navbar">
+            <a href="../homepage/index.html"><button class="navbtn">HOME</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">FASHION</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">JEWELLERY</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">ELECTRONICS</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">SPORTS</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">PAGES</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">CONTACT</button></a>
+            <a href="../allproducts/allproducts.html"><button class="navbtn">ADMIN PANEL</button></a>        
+        </div>
+        <!-- for the body part -->
+        <div class="container">
+            <div class="imageslider">
+                <img id="img1" class="image" src="../../images/backgrounds/shoes.jpg">
+                <!-- <img id="img1" src="./images/shoes.jpg"> -->
+                <img id="img2" class="image fade " src="../../images/backgrounds/shirts.jpg">
+                <img id="img3" class="image fade " src="../../images/backgrounds/watch.jpg">
+                <div class="imageslide-btn">
+                    <a href="#img2"><button><i class="fa fa-arrow-left"></i></button></a>
+                    <a href="#img3"><button><i class="fa fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+            
+            <!-- for offers container -->
+            <div class="offers">
+                <div class="offeritems">
+                    <div>
+                        <i class="fa fa-gift"></i>
+                    </div>
+                    <div>
+                        <p>BONUS PLUS</p>
+                        <p class="subhead">Make fun of shopping and collect bonuses</p>
+                    </div>    
+                </div>
+                <div class="offeritems">
+                    <div>
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <div>
+                        <p>FREE SHIPPING</p>
+                        <p class="subhead">Free shipping on all orders over $99</p>
+                    </div>           
+                </div>
+                <div class="offeritems">
+                    <div>
+                        <i class="fa fa-usd" ></i>
+                    </div>
+                    <div>
+                        <p>MONEY BACK GUARANTEE</p>
+                        <p class="subhead">30 Days money return guarantee</p>
+                    </div>         
+                </div>
+                <div class="offeritems">
+                    <div>
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div>
+                        <p>ONLINE SUPPORT 24/7</p>
+                        <p class="subhead">Call us: (+100) 123 456 7890</p>
+                    </div>                           
+                </div>
+            </div>
+            <!-- for grid for collections sections-->
+            <div class="grid-container">
+                <div class="item1"><img src="../../images/items/laptop.jpg">
+                    <div class="ad">
+                        <h1>New Laptops</h1>
+                        <p>Now Starting at $103</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="item2"><img src="../../images/items/laptop.jpg">
+                    <div class="ad2 ad">
+                        <h2>Summer Collections</h2>
+                        <p>New Arrivals On Sale</p>
+                        <button>Shop Now</button>
+                    </div></div>
+                <div class="item3"><img src="../../images/items/laptop.jpg">
+                    <div class="ad2 ad">
+                        <h2>Shoes for you</h2>
+                        <p>Now starting at $89</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="item6"><img src="../../images/items/laptop.jpg">
+                    <div class="ad2 ad">
+                        <h2>New mobile phone</h2>
+                        <p>Special for today</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="item4"><img src="../../images/items/laptop.jpg">
+                    <div class="ad2 ad">
+                        <h2>Watch collection</h2>
+                        <p>Special for today</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="item5"><img src="../../images/items/laptop.jpg">
+                    <div class="ad2 ad">
+                        <h3>Popular jewellery brands</h3>
+                        <p>Now starting at $1799</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for trending section -->
+            <div class="trending">
+                <div class="section">
+                    <a href="">Featured</a>
+                    <a href="">On Sale</a>
+                    <a href="">Top Rated</a>
+                    <a href="">New Arrivals</a>
+                </div>
+                <div class="trendscontainer">
+                    <!-- <div class="nextbtn">
+                        <a href="#card1">click</a>
+                    </div>
+                    <div class="prevbtn">
+                        <a href="">click</a>
+                    </div> -->
+                    <div class="itemcard">
+                        <a href="./product.html"><img src="../../images/items/keyboard.png"></a>
+                        <div>
+                            <p class="type">Electronics</p>
+                            <p class="itemname">Keyboard</p>
+                        </div>
+                        <div class="price-rating">
+                            <p class="price">$720.00</p>
+                            <div class="rating">
+                                <p><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i></p>
+                                <p class="ratingno">12 ratings</p>
+                            </div>
+                        </div>
+                        <div class="icon-options">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-compress"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-eye"></i>
+                            </div>                
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <a href="./product.html"><img src="../../images/items/headset.png"></a>
+                        <div>
+                            <p class="type">Electronics</p>
+                            <p class="itemname">HeadPhone</p>
+                        </div>
+                        <div class="price-rating">
+                            <p class="price">$720.00</p>
+                            <div class="rating">
+                                <p><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i></p>
+                                <p class="ratingno">12 ratings</p>
+                            </div>
+                        </div>
+                        <div class="icon-options">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-compress"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-eye"></i>
+                            </div>                
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <img src="../../images/items/pc.png">
+                        <div>
+                            <p class="type">Electronics</p>
+                            <p class="itemname">All in One PC</p>
+                        </div>
+                        <div class="price-rating">
+                            <p class="price">$720.00</p>
+                            <div class="rating">
+                                <p><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i></p>
+                                <p class="ratingno">12 ratings</p>
+                            </div>
+                        </div>
+                        <div class="icon-options">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-compress"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-eye"></i>
+                            </div>                
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <img src="../../images/items/.png">
+                        <div>
+                            <p class="type">Electronics</p>
+                            <p class="itemname">MacBook</p>
+                        </div>
+                        <div class="price-rating">
+                            <p class="price">$720.00</p>
+                            <div class="rating">
+                                <p><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i></p>
+                                <p class="ratingno">12 ratings</p>
+                            </div>
+                        </div>
+                        <div class="icon-options">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-compress"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-eye"></i>
+                            </div>                
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <img src="../../images/items/iphone.png">
+                        <div>
+                            <p class="type">Electronics</p>
+                            <p class="itemname">Phone</p>
+                        </div>
+                        <div class="price-rating">
+                            <p class="price">$720.00</p>
+                            <div class="rating">
+                                <p><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i></p>
+                                <p class="ratingno">12 ratings</p>
+                            </div>
+                        </div>
+                        <div class="icon-options">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-compress"></i>
+                            </div>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-eye"></i>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- for brand names -->
+            <div class="brand-container">
+                <div>
+                    <button class="show-brandbtn">show all brands</button>
+                </div>
+                <div class="brand-wrapper">
+                    <img src="../../images/brands/adidas.png">
+                    <img src="../../images/brands/calvin clein.png">
+                    <img src="../../images/brands/nike.png">
+                    <img src="../../images/brands/puma.png">
+                    <img src="../../images/brands/dior.png">
+                    <img src="../../images/brands/samsung.png">
+                </div>
+            </div>
+            <!-- for footer -->
+            <div class="footer">
+                <div class="subscription">
+                    <div class="subscribe-header">
+                        <h2>Subscribe our Newspaper</h2>
+                        <p>Stay up to date with our latest new and products</p>
+                    </div>
+                     <div class="email-address"> 
+                        <input type="text" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div> 
+                </div>
+                <div class="contact-info">
+                    <div class="links">
+                        <p class="heading1">USEFUL LINKS</p>
+                        <p>My Account</p>
+                        <p>Contact</p>
+                        <p>Compare</p>
+                        <p>Wishlist</p>
+                        <p>Checkout</p>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="contact">
+                        <p class="heading1">CONTACT INFORMATION</p>
+                        <p>2903 Avenue Z, Brooklyn, NY</p>
+                        <p>(212) 457-2308</p>
+                        <p>contact@emporium.com</p>
+                        <p>Mon - Sun / 9:00AM - 8:00PM</p>
+                        <p>Get directions</p>
+                        <p>Routes to us</p>
+                    </div>
+                    <div class="googlemap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988771852!2d-0.2664061945763933!3d51.52873980474533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1694337309932!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 All Rights Reserved</p>
+                    <p>Designed & Developed by Farzan</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
